@@ -35,11 +35,11 @@ public class TestaAutoBoxingUnboxing {
         List<Integer> numerosInteiros = new ArrayList<Integer>();
         numerosInteiros.add(29);
 
-        System.out.println(Integer.MAX_VALUE);
-        System.out.println(Integer.MIN_VALUE);
+        System.out.println(Integer.MAX_VALUE); // 2^31 - 1
+        System.out.println(Integer.MIN_VALUE);//-2^31
 
-        System.out.println(Integer.SIZE);
-        System.out.println(Integer.BYTES);
+        System.out.println(Integer.SIZE);  // 32 bits
+        System.out.println(Integer.BYTES);//4 Bytes
     }
     
 }
