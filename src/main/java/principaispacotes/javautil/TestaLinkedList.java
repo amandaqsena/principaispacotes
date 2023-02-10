@@ -11,7 +11,7 @@ import java.io.IOException;
 public class TestaLinkedList {
     public static void main(String[] args){
         try{
-            FileWriter myWriter = new FileWriter("./principaispacotes/dados/dadosPerformance.txt");
+            FileWriter myWriter = new FileWriter("src/main/resources/dados/dadosPerformance.txt");
             myWriter.write("Iteracoes,adicionarLL,adicionarAL,removerLL,removerAL\n");
             for (int n=100;n<100000000;n*=10){ //100 milhões foi o limite na minha máquina
                 
