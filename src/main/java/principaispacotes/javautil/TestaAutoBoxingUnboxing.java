@@ -9,7 +9,7 @@ public class TestaAutoBoxingUnboxing {
         String[] nomes = new String[5]; // array de referências
 
         int idade = 29;
-        List numeros = new ArrayList();
+        List<Number> numeros = new ArrayList<>();
 
         // idade não é referência, 
         // não é compatível com o tipo object
@@ -19,8 +19,8 @@ public class TestaAutoBoxingUnboxing {
 
         // Java fez:
 
-        Integer idadeRef = new Integer(29);
-        Integer idadeRefAutoboxing = Integer.valueOf(29);
+        //Integer idadeRef = new Integer(29);
+        Integer idadeRef = Integer.valueOf(29);
 
         System.out.println(idadeRef.doubleValue());
         //unboxing

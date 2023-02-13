@@ -60,4 +60,10 @@ public class ClasseMae {
 
         return true;
     }
+
+    public String toString(){
+        return "{ Atributo1 = " + this.getAtributo1() 
+            + "\n Atributo2 = " + this.getAtributo2()
+            + "\n Atributo3 = " + this.getAtributo3() + " }";
+    }
 }
