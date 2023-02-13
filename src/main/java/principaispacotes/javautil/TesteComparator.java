@@ -21,7 +21,7 @@ public class TesteComparator {
         lista.add(obj1);
         lista.add(obj3);
 
-        lista.sort(new Comparator<ClasseMae>() {
+        lista.sort(new Comparator<ClasseMae>() { // classe anonima
             public int compare(ClasseMae obj1, ClasseMae obj2){
                 return Integer.compare(obj1.getAtributo1(), obj2.getAtributo1());
             }
