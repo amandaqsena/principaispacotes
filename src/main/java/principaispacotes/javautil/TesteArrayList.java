@@ -1,6 +1,7 @@
 package principaispacotes.javautil;
 
 import java.util.ArrayList;
+import java.util.Collections;
 
 public class TesteArrayList {
     public static void main(String[] args){
@@ -26,6 +27,12 @@ public class TesteArrayList {
 
         String texto4 = "Amanda";
         lista.add(texto4);
+
+        
+        lista.add("A");
+        lista.add("B");
+        lista.add("C");
+        lista.add("D");
 
         for(int i = 0; i < lista.size(); i++){
             System.out.println(lista.get(i));
@@ -55,5 +62,30 @@ public class TesteArrayList {
         for(String s :nova){
             System.out.println(s);
         }
+
+        // ordenar lista
+
+        System.out.println("-----");
+        Collections.sort(lista);
+        lista.forEach(System.out::println);
+
+
+        // reverter lista
+
+        System.out.println("-----");
+        Collections.reverse(lista);
+        lista.forEach(System.out::println);
+
+        // embaralhar lista
+
+        System.out.println("-----");
+        Collections.shuffle(lista);
+        lista.forEach(System.out::println);
+
+        // rotacionar lista
+
+        System.out.println("-----");
+        Collections.rotate(lista, 5);
+        lista.forEach(System.out::println);
     }
 }
