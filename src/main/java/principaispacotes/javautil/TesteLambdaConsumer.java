@@ -1,13 +1,11 @@
 package principaispacotes.javautil;
 
 import java.util.ArrayList;
-import java.util.Comparator;
 import java.util.List;
 
 import principaispacotes.modelos.ClasseMae;
 
-public class TesteComparator {
-
+public class TesteLambdaConsumer {
     public static void main(String[] args){
         ClasseMae obj1 = new ClasseMae(0,"D",true);
         ClasseMae obj2 = new ClasseMae(1,"C",false);
@@ -21,14 +19,7 @@ public class TesteComparator {
         lista.add(obj1);
         lista.add(obj3);
 
-        lista.sort(new Comparator<ClasseMae>() { // classe anonima
-            public int compare(ClasseMae obj1, ClasseMae obj2){
-                return Integer.compare(obj1.getAtributo1(), obj2.getAtributo1());
-            }
-        });
-
-        lista.forEach(System.out::println);
+        lista.forEach((obj) ->
+            System.out.println(obj));
     }
-
-    
 }
