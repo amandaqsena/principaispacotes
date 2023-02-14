@@ -16,6 +16,10 @@ public class TesteLeitura {
         Reader  isr = new InputStreamReader(fis);
         BufferedReader br = new BufferedReader(isr);
         
+        System.out.println(
+            "O arquivo está pronto para ser lido? "
+            + br.ready());
+
         String linha = br.readLine();
         while(linha != null) {
             System.out.println(linha);

@@ -15,4 +15,4 @@ Caminho:
 
 BufferedReader > InputStreamReader > FileInputStram > arquivo.txt
 
-Stream para ler bytes, Reader para ler textos.
+Stream para ler bytes, Reader é mais específico para ler textos. InputStreamReader e BufferedReader se diferenciam pelo agrupamento de caracteres que o BufferedReader faz.
