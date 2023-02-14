@@ -14,3 +14,5 @@ A aplicação desktop, web ou mobile recebe a entrada e devolve informações. A
 Caminho:
 
 BufferedReader > InputStreamReader > FileInputStram > arquivo.txt
+
+Stream para ler bytes, Reader para ler textos.
