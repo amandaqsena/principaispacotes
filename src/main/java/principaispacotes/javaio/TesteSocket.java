@@ -37,5 +37,6 @@ public class TesteSocket {
         
         br.close();
         bw.close();
+        s.close();
     }
 }
