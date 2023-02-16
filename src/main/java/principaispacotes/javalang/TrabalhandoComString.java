@@ -25,10 +25,10 @@ public class TrabalhandoComString {
         String textoFromBuilder = builder.toString();
         System.out.println(textoFromBuilder);
 
-        CharSequence cs = new StringBuilder("também é uma sequencia de caracteres");
+        CharSequence sb = new StringBuilder("também é uma sequencia de caracteres");
 
         String nome = "AMANDA";
-        CharSequence sb = new StringBuilder("am");
+        sb = new StringBuilder("am");
         nome = nome.replace("AM", sb);
         System.out.println(nome);
     }
