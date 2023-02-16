@@ -1,7 +1,7 @@
 package principaispacotes.javaio;
 
 import java.io.IOException;
-import java.io.PrintStream;
+//import java.io.PrintStream;
 import java.io.PrintWriter;
 
 public class TesteEscritaPrintStream {
