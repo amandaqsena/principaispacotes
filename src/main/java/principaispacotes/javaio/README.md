@@ -24,3 +24,5 @@ Classes abstratas
 - de escrita:
     - OutputStream
     - Writer
+
+Alternativamente, podemos usar o FileWriter para escrita. Essa classe pode ser passada para outros Writers, como o BufferedWriter. É usada para estabelecer uma saída com um arquivo e para escrever caracteres.
