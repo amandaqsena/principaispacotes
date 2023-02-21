@@ -24,14 +24,13 @@ public class TesteLeituraScanner {
             linhaScanner.useLocale(Locale.US);
 
             String tipoConta = linhaScanner.next();
-            int valor2 = linhaScanner.nextInt();
-            int valor3 = linhaScanner.nextInt();
-            String valor4 = linhaScanner.next();
-            double valor5 = linhaScanner.nextDouble();
+            int agencia = linhaScanner.nextInt();
+            int numero = linhaScanner.nextInt();
+            String titular = linhaScanner.next();
+            double saldo = linhaScanner.nextDouble();
 
-            String valorFormatado = String.format("%s - %04d-%d, %s: %f", tipoConta, valor2, valor3, valor4, valor5);
-            
-            System.out.println(valorFormatado);
+            System.out.format(new Locale("pt","BR"),"%s - %04d-%d, %s: %.2f",
+                                tipoConta, agencia, numero, titular, saldo);
 
             linhaScanner.close();
 
