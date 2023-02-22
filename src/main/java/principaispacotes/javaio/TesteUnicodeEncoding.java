@@ -22,7 +22,7 @@ public class TesteUnicodeEncoding {
         bytes = s.getBytes("UTF-16");
         System.out.println(bytes.length + ", UTF-16");//4
         sNovo = new String(bytes, "windows-1252");//pega errado
-        System.out.println(sNovo);
+        System.out.print(sNovo);
 
         bytes = s.getBytes(StandardCharsets.US_ASCII);
         System.out.println(bytes.length + ", US-ASCII");//1
@@ -32,7 +32,13 @@ public class TesteUnicodeEncoding {
         String cedilha = "ç";
         bytes = cedilha.getBytes(StandardCharsets.US_ASCII);
         sNovo = new String(bytes, "US-ASCII");
-        System.out.println(sNovo);// ascii não tem cedilha
+        System.out.println(sNovo);// ?, ascii não tem cedilha
+
+        Charset utf8 = StandardCharsets.UTF_8;
+        String s1 = "13º Órgão Oficial";
+        byte[] bytes1 = s1.getBytes(utf8);
+        String s2 = new String(bytes1, utf8);
+        System.out.println(s2);
 
     }
 }
