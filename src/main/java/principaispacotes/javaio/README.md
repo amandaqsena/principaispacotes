@@ -31,3 +31,7 @@ Alternativamente, podemos usar o FileWriter para escrita. Essa classe pode ser p
 
 - java.io.ObjectOutputStream = Objeto -> Bits e Bytes
 - java.io.ObjectInputStream = Bits e Bytes -> Objeto
+
+## Serializando composições
+
+Para serializar um objeto, precisamos que ele e seus atributos pertençam a classes serializáveis, caso contrário, será lançada uma excessão do tipo NotSerializableException. O atributo de classe não serializável pode ser também marcado como "transient" para não gravá-lo no objeto. Isso significa que ele não faz parte da serialização.

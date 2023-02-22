@@ -1,5 +1,7 @@
 package principaispacotes.modelos;
 
-public class ClasseFilha extends ClasseMae{
+import java.io.Serializable;
+
+public class ClasseFilha extends ClasseMae implements Serializable{
     
 }

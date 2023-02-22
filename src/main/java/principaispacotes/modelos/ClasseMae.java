@@ -1,6 +1,8 @@
 package principaispacotes.modelos;
 
-public class ClasseMae {
+import java.io.Serializable;
+
+public class ClasseMae implements Serializable{
     private int atributo1;
     private String atributo2;
     private boolean atributo3;
