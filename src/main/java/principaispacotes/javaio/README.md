@@ -26,3 +26,8 @@ Classes abstratas
     - Writer
 
 Alternativamente, podemos usar o FileWriter para escrita. Essa classe pode ser passada para outros Writers, como o BufferedWriter. É usada para estabelecer uma saída com um arquivo e para escrever caracteres.
+
+# Serialização
+
+- java.io.ObjectOutputStream = Objeto -> Bits e Bytes
+- java.io.ObjectInputStream = Bits e Bytes -> Objeto
