@@ -7,6 +7,10 @@ import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 
+
+/**
+ * Faz serialização e desserialização de objeto, nessa ordem.
+ */
 public class TesteSerializacao {
     public static void main(String[] args) throws FileNotFoundException, IOException, ClassNotFoundException {
 
